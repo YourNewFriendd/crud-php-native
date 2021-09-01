@@ -40,7 +40,8 @@
             <td><?= $mhs->agama ?></td>
             <td><?= $mhs->jenis_kelamin ?></td>
             <td><?= $mhs->bahasa ?></td>
-            <td><a href="edit.php?id=<?= $mhs->id?>">Ubah</a> | <a href="hapus.php?id=<?= $mhs->id?>">Hapus</a></td>
+            <td><a href="edit.php?id=<?= $mhs->id?>">Ubah</a> | <a href="hapus.php?id=<?= $mhs->id?>"
+            onclick="return confirm('Yakin Hapus?')">Hapus</a></td>
         </tr>
         
         <?php $i++; endforeach;?> 
